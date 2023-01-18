@@ -9,6 +9,7 @@ import EmailIcon from "@mui/icons-material/Email";
 const Footer = () => {
   return (
     <div className="main-footer">
+      <h1>Test</h1>
       <div className="container">
         <div className="row">
           <div className="col">
