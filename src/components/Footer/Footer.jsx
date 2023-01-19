@@ -9,7 +9,6 @@ import EmailIcon from "@mui/icons-material/Email";
 const Footer = () => {
   return (
     <div className="main-footer">
-      <h1>Test</h1>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -31,22 +30,22 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.youtube.com/">
                     <YouTubeIcon />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://web.whatsapp.com/">
                     <WhatsAppIcon />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.instagram.com/">
                     <InstagramIcon />
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.mail.com/">
                     <EmailIcon />
                   </a>
                 </li>
