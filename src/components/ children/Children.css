@@ -1,0 +1,52 @@
+.maincorus {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid black;
+  width: 80%;
+  height: 500px;
+  margin: 5% auto;
+}
+.h1 {
+  font-size: 50px;
+  margin-left: 10%;
+}
+.div-card {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin: 5% 5%;
+  width: 10%;
+}
+.card:hover {
+  background-color: rgb(0, 183, 255);
+  width: 20%;
+  height: 30%;
+}
+.long-div {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 11%;
+  margin-right: 25%;
+  width: 85%;
+  height: 2%;
+}
+.vse-deti_card {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  width: 100%;
+}
+.vse-deti_card:hover {
+  background-color: rgb(221, 220, 220);
+}
+.vse-deti {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nujno {
+  color: green;
+}
