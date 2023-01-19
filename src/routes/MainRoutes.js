@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Children from "../components/ children/ Children";
+import NursingHouse from "../components/nursinghouse/NursingHouse";
 import HomePage from "../pages/HomaPage/HomePage";
 import MedicinePage from "../pages/medicine/MedicinePage";
 
@@ -14,6 +16,17 @@ const MainRoutes = () => {
       link: "/medicine",
       element: <MedicinePage />,
       id: 2,
+    },
+    {
+      link: "/deti",
+      element: <Children />,
+      id: 3,
+    },
+
+    {
+      link: "/nursingHouse",
+      element: <NursingHouse />,
+      id: 5,
     },
   ];
   return (

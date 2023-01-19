@@ -8,40 +8,48 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import "./Children.css";
-import { Card, CardActions, CardContent, Typography } from "@mui/material";
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import VaccinesIcon from "@mui/icons-material/Vaccines";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
     label: "Илья Кулабухов",
-    imgPath: "https://blizkofond.ru/wp-content/uploads/2020/10/favicon.png",
+    imgPath:
+      "https://tv8.md/resources/2022/12/05/70d17b56-ecc1-4263-a745-0a9b3f7af94b_1634287992lordok1.jpg",
     // description: "Протонная терапия",
   },
   {
     label: "Ильдар Шамсутдинов",
     imgPath:
-      "https://nablagoe1.xyz/wp-content/uploads/logo-ot-serdca-k-serdcu-a.png",
+      "https://kolobok.ua/i/11/69/80/2/1169802/image_main/437dfeac5d8d08e7a4cd7cfee40f36cc-quality_70Xresize_crop_1Xallow_enlarge_0Xw_698Xh_465.jpg",
     // description: "Оперативное лечение",
   },
   {
     label: "Дарья Рыжова",
     imgPath:
-      "https://png.pngtree.com/element_our/png_detail/20181114/charity-icon-png_239790.jpg",
+      "https://health.fakty.com.ua/wp-content/uploads/sites/2/2022/02/15/onkologyya-e1644911149623-620x349.jpg",
     // description: "Оперативное лечение",
   },
   {
     label: "Виталий Тоболь",
     imgPath:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoZFdHVqXTsXWN1rfC6Y5AoPJL317C_ki47dJlgNMk2poNzVfC4s-EGie7G26JabQnYqE&usqp=CAU",
+      "https://exo-ykt.ru/upload/iblock/aa0/aa03f5cf317a16acf68cab55a5f991de.jpg",
     // description: "Восстановительное лечение",
   },
   {
     label: "Жанет Гиреева",
     imgPath:
-      "https://nablagoe1.xyz/wp-content/uploads/logo-ot-serdca-k-serdcu-a.png",
+      "https://n1s1.hsmedia.ru/84/36/54/843654311e79d7f7941355f7a886fe2d/728x485_1_04072f738dc35f11bb22a7878e48debe@2121x1414_0xac120003_3235339081632917713.jpeg",
     // description: "Протонная терапия",
   },
 ];
@@ -287,6 +295,78 @@ function Children() {
           </CardContent>
           <CardActions>
             <Button size="small"></Button>
+          </CardActions>
+        </Card>
+      </div>
+
+      <div className="div-card">
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <CardMedia
+            sx={{ height: 140 }}
+            image="https://img.freepik.com/premium-photo/long-shot-nurse-helping-old-man-getting-up_23-2148239021.jpg?w=2000"
+            title="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Дом престарелых
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
+
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <CardMedia
+            sx={{ height: 140 }}
+            image="https://1prof.by/storage/2022/12/bez-1212.jpg"
+            title="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              бездомные
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
+
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <CardMedia
+            sx={{ height: 140 }}
+            image="https://cabar.asia/wp-content/uploads/2022/07/d792fbb6c2b6feb2455aa3611d17851c.jpg"
+            title="green iguana"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              бездомные животные
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Lizards are a widespread group of squamate reptiles, with over
+              6,000 species, ranging across all continents except Antarctica
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">
+              <a
+                className="animals"
+                href="https://www.instagram.com/kainar.bishkek/"
+              >
+                <InstagramIcon />
+              </a>
+            </Button>
+            <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
       </div>

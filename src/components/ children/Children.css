@@ -14,13 +14,17 @@
 .div-card {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 .card {
+  /* background-image: url("https://www.life-line.ru/local/templates/general/redesign_v2/img/new-design/arc-green.svg"); */
+
   margin: 5% 5%;
   width: 10%;
 }
 .card:hover {
   background-color: rgb(0, 183, 255);
+  color: white;
   width: 20%;
   height: 30%;
 }
@@ -49,4 +53,44 @@
 }
 .nujno {
   color: green;
+}
+
+.animals {
+  padding: 0;
+  border: none;
+  /* background-color: ; */
+}
+@media all and (max-width: 1024px) {
+  /* body {
+    margin: 0;
+  } */
+  .maincorus {
+    width: 1024px;
+    margin: 0;
+  }
+  /* .corusimg {
+    width: 100%;
+  } */
+  .div-card {
+    width: 100%;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .corusimg {
+    width: 100% !important;
+  }
+  .maincorus {
+    margin-right: 10% !important;
+  }
+}
+
+@media all and (max-width: 425px) {
+}
+
+@media all and (max-width: 315px) {
 }
