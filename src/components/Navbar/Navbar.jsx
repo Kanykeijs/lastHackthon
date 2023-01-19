@@ -22,6 +22,7 @@ const pages = [
     {name: "Хочу помочь", link: "/card", id:4}
   ];
 const settings = ['Профиль', 'Выйти'];
+console.log('fdsa');
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
