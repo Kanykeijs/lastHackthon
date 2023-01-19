@@ -14,6 +14,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Alert } from "@mui/material";
 import { useAuth } from "../context/AuthContext";
+import './Login.css'
 
 function Copyright(props) {
   return (
@@ -56,8 +57,8 @@ export default function Login() {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+    <ThemeProvider  theme={theme}>
+      <Container className="muss" component="main" maxWidth="xs">
         {error ? <Alert severity="error">{error}</Alert> : null}
         <CssBaseline />
         <Box

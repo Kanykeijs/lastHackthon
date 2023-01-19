@@ -5,7 +5,7 @@ import './Fund.css'
 const Fund = () => {
     return (
         <div>
-           <img className='img' style={{width: '1000px',marginLeft: '100px'}} src='https://www.life-line.ru/local/templates/general/img/ll_opengraph4.png'/>
+           <img className='img' src='https://www.life-line.ru/local/templates/general/img/ll_opengraph4.png'/>
 
        
         <div>

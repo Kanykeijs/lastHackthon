@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Fund from "./components/Fund/Fund";
 import Login from "./components/Login";
 import Register from "./components/Registr";
+import Children from "./components/ children/ Children";
+import Card from "./components/ children/Card";
 
 const Routing = () => {
   const PUBLIC_PAGES = [
@@ -26,6 +28,21 @@ const Routing = () => {
       element: <CreditCard />,
       id: 4,
     },
+    {
+      link: "/deti",
+      element: <Children />,
+      id: 1,
+    },
+    {
+      link: "/deti",
+      element: <Card />,
+      id: 2,
+    },
+    // {
+    //   link: "/deti",
+    //   element: <Footer />,
+    //   id: 3,
+    // },
   ];
   return (
     <Routes>
