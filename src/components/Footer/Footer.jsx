@@ -25,12 +25,12 @@ const Footer = () => {
             <div className="icons">
               <ul>
                 <li>
-                  <a href="">
+                  <a href="https://t.me/Charity0789Bot">
                     <TelegramIcon />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/">
+                  <a href="https://youtu.be/pMH1_foBiKI">
                     <YouTubeIcon />
                   </a>
                 </li>
@@ -40,7 +40,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/">
+                  <a href="https://instagram.com/fond.life.line?igshid=YmMyMTA2M2Y=">
                     <InstagramIcon />
                   </a>
                 </li>
