@@ -23,6 +23,16 @@ const Routing = () => {
       element: <NursingHouse />,
       id: 3,
     },
+    {
+      link: "/",
+      element: <HomePage />,
+      id: 1,
+    },
+    {
+      link: "/medicine",
+      element: <MedicinePage />,
+      id: 2,
+    },
   ];
   return (
     <Routes>
