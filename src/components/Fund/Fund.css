@@ -42,3 +42,13 @@ h5{
 }
 
 
+.img{
+    background-image: url(https://www.life-line.ru/local/templates/general/img/ll_opengraph4.png);
+    background-size: 500%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}

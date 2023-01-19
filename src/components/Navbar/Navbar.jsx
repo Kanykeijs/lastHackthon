@@ -16,9 +16,10 @@ import { useNavigate } from 'react-router-dom';
 
 // const pages = ['Фонд', 'Медицина', 'Контакты'];
 const pages = [
-    {name: "Фонд", link: "/fonde", id: 1},
+    {name: "Фонд", link: "/funde", id: 1},
     {name: "Медицина", link: "/med", id: 2},
-    {name: "Контакты", link: "/contacts", id:3}
+    {name: "Дети", link: "/deti", id:3},
+    {name: "Хочу помочь", link: "/card", id:4}
   ];
 const settings = ['Профиль', 'Выйти'];
 
