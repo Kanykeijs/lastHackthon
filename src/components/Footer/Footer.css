@@ -8,6 +8,9 @@
   background-color: #78909c;
   color: white;
 }
+.container {
+  margin-left: 5%;
+}
 
 .row {
   display: flex;
@@ -80,4 +83,31 @@ a {
 }
 a:hover {
   background-color: rgb(0, 183, 255);
+}
+@media all and (max-width: 1340px) {
+  .col {
+    width: 100%;
+    margin: 0;
+  }
+  .main-footer {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .col {
+    width: 100%;
+    margin: 0;
+  }
+  .list-address {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 924px) {
+  .col {
+    width: 100%;
+    margin: 0;
+  }
 }

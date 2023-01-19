@@ -35,7 +35,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://web.whatsapp.com/">
                     <WhatsAppIcon />
                   </a>
                 </li>
@@ -45,7 +45,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.mail.com/">
                     <EmailIcon />
                   </a>
                 </li>
