@@ -4,7 +4,7 @@ import Fund from "./components/Fund/Fund";
 import Login from "./components/Login";
 import Register from "./components/Registr";
 import Children from "./components/ children/ Children";
-import Card from "./components/ children/Card";
+import Card from "./components/ children/ Children";
 
 const Routing = () => {
   const PUBLIC_PAGES = [

@@ -1,13 +1,19 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import HomePage from "../pages/HomaPage/HomePage";
 import MedicinePage from "../pages/medicine/MedicinePage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
+      link: "/",
+      element: <HomePage />,
+      id: 1,
+    },
+    {
       link: "/medicine",
       element: <MedicinePage />,
-      id: 1,
+      id: 2,
     },
   ];
   return (
@@ -16,11 +22,6 @@ const MainRoutes = () => {
         <Route path={page.link} element={page.element} key={page.id} />
       ))}
     </Routes>
-    // <Routes>
-    //   {PUBLIC_ROUTES.map((page) => (
-    //     <Route path={page.link} element={page.element} key={page.id} />
-    //   ))}
-    // </Routes>
   );
 };
 
