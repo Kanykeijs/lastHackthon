@@ -16,6 +16,8 @@ import { Alert } from "@mui/material";
 import { useAuth } from "../context/AuthContext";
 import './Login.css'
 
+
+
 function Copyright(props) {
   return (
     <Typography
@@ -56,7 +58,9 @@ export default function Login() {
     login(formData, email);
   }
 
+  
   return (
+    
     <ThemeProvider  theme={theme}>
       <Container className="muss" component="main" maxWidth="xs">
         {error ? <Alert severity="error">{error}</Alert> : null}

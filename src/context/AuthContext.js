@@ -34,7 +34,7 @@ const AuthContextProvider = ({ children }) => {
       localStorage.setItem("token", JSON.stringify(res.data));
       localStorage.setItem("username", email);
       setUser(email);
-      navigate("/fonde");
+      navigate("/funde");
     } catch (error) {
       console.log(error.response.data.detail);
       setError(error.response.data.detail);
