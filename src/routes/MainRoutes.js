@@ -13,6 +13,7 @@ import Pets from "../components/pets/Pets";
 import Donate from "../components/donate/Donate";
 // import Petss from "../components/pets/Petss";
 
+
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
@@ -45,11 +46,13 @@ const MainRoutes = () => {
       link: "/register",
       element: <Register />,
       id: 6,
+
     },
     {
       link: "/login",
       element: <Login />,
       id: 7,
+
     },
     {
       link: "/card",
@@ -71,6 +74,7 @@ const MainRoutes = () => {
       element: <Donate />,
       id: 11,
     },
+
   ];
   return (
     <Routes>
