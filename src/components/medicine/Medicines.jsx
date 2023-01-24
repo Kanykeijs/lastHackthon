@@ -5,7 +5,7 @@ import OutlinedCard from "./CardsMain";
 
 const Medicines = () => {
   return (
-    <Box className="mm" sx={{ marginBottom: "2500px" }}>
+    <Box className="mm">
       <div className="med">
         <ul className="aa">
           <span className="ad">Главная</span>
