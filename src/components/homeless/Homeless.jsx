@@ -5,7 +5,13 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import { Box, CardActionArea } from "@mui/material";
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import HomeIcon from "@mui/icons-material/Home";
+import YardIcon from "@mui/icons-material/Yard";
+import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
+import MosqueIcon from "@mui/icons-material/Mosque";
+import EmojiNatureIcon from "@mui/icons-material/EmojiNature";
 
 export default function Homeless() {
   return (
@@ -14,7 +20,7 @@ export default function Homeless() {
         <Card sx={{ maxWidth: 1500 }}>
           <CardMedia
             sx={{ height: 600 }}
-            image="https://catherineasquithgallery.com/uploads/posts/2021-02/1614439773_20-p-temnii-fon-dlya-saita-20.jpg"
+            image="https://vsluh.ru/upload/resize_cache/iblock/076/500_500_0/n039iduikizryaz734puhxfn5d3x791r.jpg"
             title="green iguana"
           />
         </Card>
@@ -77,66 +83,188 @@ export default function Homeless() {
         image="https://img.freepik.com/free-vector/outdoor-scene-with-homeless-people_1308-102439.jpg?w=2000"
         title="green iguana"
       />
+      <Typography
+        sx={{ textAlign: "center", marginTop: "5%", fontSize: "40px" }}
+        gutterBottom
+        variant="h5"
+        component="div"
+      >
+        некоторые факты о нас
+      </Typography>
+
       <div className="div-card">
         <Card className="card" sx={{ minWidth: 275 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://i.pinimg.com/736x/ac/56/e8/ac56e84471d656ed6fbc2457c3f3276f--one-bedroom-tiny-homes.jpg"
-            title="green iguana"
-          />
+          <HandshakeIcon sx={{ fontSize: "200px", color: "#64b5f6" }} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Сбор на модульное здания приюта
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              2 208 500 рублей <br /> Собрано 215 000 рублей
+            <Typography gutterBottom variant="h5" component="div"></Typography>
+            <Typography
+              sx={{ fontWeight: 400, textAlign: "center" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              помогаем людям,
+              <br /> оставшимся без крыши над головой
             </Typography>
           </CardContent>
-          <CardActions>
-            {/* <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button> */}
-          </CardActions>
+          <CardActions></CardActions>
         </Card>
 
         <Card className="card" sx={{ minWidth: 275 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://as1.ftcdn.net/v2/jpg/04/78/55/62/1000_F_478556212_ljQrPOkJ1uEqHaQt3nhThe2j4O37z2rd.jpg"
-            title="green iguana"
-          />
+          <HomeIcon sx={{ fontSize: "200px", color: "#64b5f6" }} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Сбор на хозблок с насосом и водоочисткой
-            </Typography>
             <Typography variant="body2" color="text.secondary">
-              300 000 рублей <br /> Собрано 21 000 рублей
+              представляем жилье и питание
             </Typography>
           </CardContent>
-          <CardActions>
-            {/* <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button> */}
-          </CardActions>
+          <CardActions></CardActions>
         </Card>
 
         <Card className="card" sx={{ minWidth: 275 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://s.yimg.com/ny/api/res/1.2/9nWlinytPhekivQ8OBXVpg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/http://41.media.tumblr.com/97d431a16cfabefd551e9960417d13ab/tumblr_inline_nvwrf8bQLT1tchuoh_1280.jpg"
-            title="green iguana"
-          />
+          <YardIcon sx={{ fontSize: "200px", color: "#64b5f6" }} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Сбор на модульное здания приюта
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              450 000 рублей Сбор закрыт
+            <Typography
+              sx={{ fontWeight: 400, textAlign: "center" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              главное требование: <br /> трудиться в меру своих сил и ни грамма
+              алкоголя
             </Typography>
           </CardContent>
-          <CardActions>
-            {/* <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button> */}
-          </CardActions>
+          <CardActions></CardActions>
         </Card>
+      </div>
+
+      <div className="div-card">
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <AssignmentIndIcon sx={{ fontSize: "200px", color: "#64b5f6" }} />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div"></Typography>
+            <Typography
+              sx={{ fontWeight: 400, textAlign: "center" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              Помогаем восстановить документы
+            </Typography>
+          </CardContent>
+          <CardActions></CardActions>
+        </Card>
+
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <MosqueIcon sx={{ fontSize: "200px", color: "#64b5f6" }} />
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              Духовные беседы
+            </Typography>
+          </CardContent>
+          <CardActions></CardActions>
+        </Card>
+
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <EmojiNatureIcon sx={{ fontSize: "200px", color: "#64b5f6" }} />
+          <CardContent>
+            <Typography
+              sx={{ fontWeight: 400, textAlign: "center" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              Содержим собственных коров, свиней, кур
+            </Typography>
+          </CardContent>
+          <CardActions></CardActions>
+        </Card>
+      </div>
+
+      <Typography
+        sx={{ textAlign: "center", marginTop: "5%", fontSize: "40px" }}
+        gutterBottom
+        variant="h5"
+        component="div"
+      >
+        Что именно мы делаем?
+      </Typography>
+
+      <Typography
+        sx={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          width: "50em",
+          marginTop: "5%",
+          fontSize: "20px",
+        }}
+        variant="body2"
+        color="text.secondary"
+      >
+        Наш приют помогает восстановить документы, начать вести трезвую жизнь,
+        возобновить навыки к постоянному труду, помогаем восстановить
+        родственные связи. Мы хотим дать людям не только рыбу, но и удочку,
+        чтобы поймать рыбу. Приют расположен в Подмосковье 90-километрах от
+        Москвы по Ярославскому шоссе. Точный адрес: Владимирская обл.,
+        Александровский р-н, дер. Корелы. Площадь земельного участка 4 га. В
+        нашем приюте могут жить одновременно до 16-ти человек.
+      </Typography>
+
+      <div className="div-card">
+        <>
+          <Card className="card" sx={{ minWidth: 275 }}>
+            <CardMedia
+              sx={{ height: 140 }}
+              image="https://s.yimg.com/ny/api/res/1.2/9nWlinytPhekivQ8OBXVpg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/http://41.media.tumblr.com/97d431a16cfabefd551e9960417d13ab/tumblr_inline_nvwrf8bQLT1tchuoh_1280.jpg"
+              title="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Сбор на модульное здания приюта
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                450 000 рублей Сбор закрыт
+              </Typography>
+            </CardContent>
+            <CardActions>
+              {/* <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button> */}
+            </CardActions>
+          </Card>
+          <Card className="card" sx={{ minWidth: 275 }}>
+            <CardMedia
+              sx={{ height: 140 }}
+              image="https://s.yimg.com/ny/api/res/1.2/9nWlinytPhekivQ8OBXVpg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/http://41.media.tumblr.com/97d431a16cfabefd551e9960417d13ab/tumblr_inline_nvwrf8bQLT1tchuoh_1280.jpg"
+              title="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Сбор на модульное здания приюта
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                450 000 рублей Сбор закрыт
+              </Typography>
+            </CardContent>
+            <CardActions>
+              {/* <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button> */}
+            </CardActions>
+          </Card>
+          <Card className="card" sx={{ minWidth: 275 }}>
+            <CardMedia
+              sx={{ height: 140 }}
+              image="https://s.yimg.com/ny/api/res/1.2/9nWlinytPhekivQ8OBXVpg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/http://41.media.tumblr.com/97d431a16cfabefd551e9960417d13ab/tumblr_inline_nvwrf8bQLT1tchuoh_1280.jpg"
+              title="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Сбор на модульное здания приюта
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                450 000 рублей Сбор закрыт
+              </Typography>
+            </CardContent>
+            <CardActions>
+              {/* <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button> */}
+            </CardActions>
+          </Card>
+        </>
       </div>
       <CardActions>
         <Button sx={{ marginLeft: "150px" }} size="small">

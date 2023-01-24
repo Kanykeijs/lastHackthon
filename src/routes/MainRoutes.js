@@ -11,6 +11,8 @@ import CreditCard from "react-credit-cards";
 import Homeless from "../components/homeless/Homeless";
 import Pets from "../components/pets/Pets";
 import Donate from "../components/donate/Donate";
+import Partners from "../components/partners/Partners";
+import Volunteers from "../components/volunteers/Volunteers";
 // import Petss from "../components/pets/Petss";
 
 const MainRoutes = () => {
@@ -70,6 +72,16 @@ const MainRoutes = () => {
       link: "sdelat-pozhertvovanie",
       element: <Donate />,
       id: 11,
+    },
+    {
+      link: "partners",
+      element: <Partners />,
+      id: 12,
+    },
+    {
+      link: "volunteers",
+      element: <Volunteers />,
+      id: 13,
     },
   ];
   return (

@@ -11,14 +11,15 @@ export default function SimpleAccordion() {
   return (
     <>
       <CardMedia
-        sx={{ height: 520 }}
-        image="https://png.pngtree.com/background/20221206/original/pngtree-digital-credit-card-payment-background-in-fast-technology-style-picture-image_1984031.jpg"
+        sx={{ height: 191 }}
+        image="ckground-in-fast-technology-style-picture-image_1984031.jpg"
         title="green iguana"
       />
       <div>
         <h1 className="h1">Сделать пожертвование детям</h1>
-        <Accordion>
+        <Accordion className="div-acrd">
           <AccordionSummary
+            className="AccordionSummary"
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id="panel2a-header"

@@ -38,13 +38,14 @@ function Navbar() {
   return (
     <AppBar
       id="mbar"
-      sx={{ padding: "20px 36px", width: "100%" }}
+      sx={{ padding: "20px 36px", width: "100%", color: "black" }}
       position="static"
     >
       <Container maxWidth="100%">
         <Toolbar id="tbar" disableGutters>
           <img
-            src="https://www.life-line.ru/local/templates/general/redesign_v2/img/new-design/logo-ll.svg"
+            style={{ color: "blue" }}
+            src="https://www.life-line.ru/local/templates/general/donate_redesign/img/new-design/logo-ll2.svg"
             alt=""
           />
           <Box>
