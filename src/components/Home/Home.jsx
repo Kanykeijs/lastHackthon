@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Corus from "./Corus";
+import HomeCards from "./HomeCards";
 
 const Home = () => {
   return (
@@ -131,8 +132,16 @@ const Home = () => {
               <Typography id="grh">лет спасаем детей вместе</Typography>
             </Box>
             <Box>
-              <Typography></Typography>
-              <Typography></Typography>
+              <h1
+                style={{
+                  fontSize: "50px",
+                  marginLeft: "80px",
+                  marginTop: "120px",
+                }}
+              >
+                Медицинские программы
+              </h1>
+              <HomeCards />
             </Box>
           </Box>
         </Box>
