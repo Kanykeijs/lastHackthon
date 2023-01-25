@@ -30,27 +30,27 @@ const MainRoutes = () => {
     {
       link: "/nursingHouse",
       element: <NursingHouse />,
-      id: 5,
+      id: 4,
     },
     {
       link: "/funde",
       element: <Fund />,
-      id: 6,
+      id: 5,
     },
     {
       link: "/register",
       element: <Register />,
-      id: 7,
+      id: 6,
     },
     {
       link: "/login",
       element: <Login />,
-      id: 8,
+      id: 7,
     },
     {
       link: "/card",
       element: <CreditCard />,
-      id: 9,
+      id: 8,
     },
   ];
   return (

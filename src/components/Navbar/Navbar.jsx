@@ -12,13 +12,33 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { useNavigate } from "react-router";
+import { Modal } from "@mui/material";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const navigate = useNavigate();
+  const handleClose = () => setOpen(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -43,13 +63,16 @@ function Navbar() {
     >
       <Container maxWidth="100%">
         <Toolbar id="tbar" disableGutters>
-          <img
-            src="https://www.life-line.ru/local/templates/general/redesign_v2/img/new-design/logo-ll.svg"
-            alt=""
-          />
+          <Button onClick={() => navigate("/")}>
+            <img
+              src="https://www.life-line.ru/local/templates/general/redesign_v2/img/new-design/logo-ll.svg"
+              alt=""
+            />
+          </Button>
           <Box>
             <Box id="bbar">
               <Typography
+                id="tpnb"
                 variant="h6"
                 noWrap
                 component="a"
@@ -59,7 +82,7 @@ function Navbar() {
                   display: { xs: "none", md: "flex" },
                   fontFamily: "monospace",
                   fontWeight: 700,
-                  letterSpacing: ".1rem",
+                  //   letterSpacing: ".1rem",
                   color: "inherit",
                   textDecoration: "none",
                 }}
@@ -67,6 +90,7 @@ function Navbar() {
                 Фонд
               </Typography>
               <Typography
+                id="tpnb"
                 variant="h6"
                 noWrap
                 component="a"
@@ -76,7 +100,7 @@ function Navbar() {
                   display: { xs: "none", md: "flex" },
                   fontFamily: "monospace",
                   fontWeight: 700,
-                  letterSpacing: ".1rem",
+                  //   letterSpacing: ".1rem",
                   color: "inherit",
                   textDecoration: "none",
                 }}
@@ -84,6 +108,7 @@ function Navbar() {
                 Медицина
               </Typography>
               <Typography
+                id="tpnb"
                 variant="h6"
                 noWrap
                 component="a"
@@ -93,7 +118,7 @@ function Navbar() {
                   display: { xs: "none", md: "flex" },
                   fontFamily: "monospace",
                   fontWeight: 700,
-                  letterSpacing: ".1rem",
+                  //   letterSpacing: ".1rem",
                   color: "inherit",
                   textDecoration: "none",
                 }}
@@ -101,21 +126,112 @@ function Navbar() {
                 Дети
               </Typography>
               <Typography
+                id="tpnb"
                 variant="h6"
                 noWrap
                 component="a"
-                href="/"
                 sx={{
                   mr: 2,
                   display: { xs: "none", md: "flex" },
                   fontFamily: "monospace",
                   fontWeight: 700,
-                  letterSpacing: ".1rem",
+                  //   letterSpacing: ".1rem",
                   color: "inherit",
                   textDecoration: "none",
                 }}
               >
-                Контакты
+                {" "}
+                <Button
+                  sx={{ color: "white", marginTop: "5px" }}
+                  onClick={handleOpen}
+                >
+                  Контакты
+                </Button>
+              </Typography>
+
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box
+                  sx={{
+                    ...style,
+                    width: 400,
+                    borderRadius: 3,
+                    borderColor: "#fff",
+                  }}
+                >
+                  <h2 id="parent-modal-title" style={{ textAlign: "center" }}>
+                    НАШИ КОНТАКТЫ
+                  </h2>
+                  <p id="parent-modal-description">
+                    Наш адрес: ул.Табышалиева 29{" "}
+                  </p>
+                  <p id="parent-modal-description">Т: 0705-33-71-82 </p>
+                  <p id="parent-modal-description">Т: 0220-15-99-94 </p>
+                  <Box
+                    sx={{ display: "flex", alignItems: "center", gap: "150px" }}
+                  >
+                    <Button
+                      color="success"
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                      }}
+                    >
+                      <LocalPhoneIcon />
+                      <a
+                        href="tel:0705-33-71-82"
+                        style={{ textDecoration: "none", color: "green" }}
+                      >
+                        Позвонить
+                      </a>
+                    </Button>
+                    <Button color="error" onClick={handleClose}>
+                      Закрыть
+                    </Button>
+                  </Box>
+                </Box>
+              </Modal>
+
+              <Typography
+                id="tpnb"
+                variant="h6"
+                noWrap
+                component="a"
+                href="/funde"
+                sx={{
+                  mr: 2,
+                  display: { xs: "none", md: "flex" },
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  //   letterSpacing: ".1rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                Приют для бездомных
+              </Typography>
+              <Typography
+                id="tpnb"
+                variant="h6"
+                noWrap
+                component="a"
+                href="/funde"
+                sx={{
+                  mr: 2,
+                  display: { xs: "none", md: "flex" },
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  //   letterSpacing: ".1rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                Дом для пристрорелых
               </Typography>
             </Box>
             <Box id="nbtns">
