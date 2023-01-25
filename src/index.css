@@ -114,6 +114,12 @@ code {
   border-radius: 7px;
 }
 
+a:hover {
+  background-color: rgba(69, 65, 65, 0.45);
+  transition: 0.5s;
+  color: white;
+}
+
 .ta:hover {
   /* background: rgb(231, 231, 231);
   background: linear-gradient(
@@ -226,7 +232,7 @@ code {
 }
 
 #cardbr:hover {
-  background-color: rgb(48, 175, 254);
+  background-color: rgb(27, 141, 255);
   color: white;
   transition: 0.5s;
   /* height: 550px */
@@ -308,7 +314,7 @@ code {
   width: 20%;
   border-radius: 6px;
   top: 20px;
-  color: rgb(51, 209, 253);
+  color: rgb(0, 200, 255);
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
 }

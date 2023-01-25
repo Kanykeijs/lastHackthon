@@ -8,6 +8,12 @@ import Register from "../components/Registr";
 import HomePage from "../pages/HomaPage/HomePage";
 import MedicinePage from "../pages/medicine/MedicinePage";
 import CreditCard from "react-credit-cards";
+import Homeless from "../components/homeless/Homeless";
+import Donate from "../components/donate/Donate";
+import Partners from "../components/partners/Partners";
+import Volunteers from "../components/volunteers/Volunteers";
+import { Pets } from "@mui/icons-material";
+// import Petss from "../components/pets/Petss";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -52,6 +58,33 @@ const MainRoutes = () => {
       element: <CreditCard />,
       id: 8,
     },
+    {
+      link: "/homeless",
+      element: <Homeless />,
+      id: 9,
+    },
+    {
+      link: "/pets",
+      element: <Pets />,
+      id: 10,
+    },
+    {
+      link: "sdelat-pozhertvovanie",
+      element: <Donate />,
+      id: 11,
+    },
+    {
+      link: "partners",
+      element: <Partners />,
+      id: 12,
+    },
+    {
+      link: "volunteers",
+      element: <Volunteers />,
+      id: 13,
+    },
+
+    // jnj
   ];
   return (
     <Routes>

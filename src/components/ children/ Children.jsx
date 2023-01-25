@@ -54,15 +54,6 @@ const images = [
   },
 ];
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
-
 function Children() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -82,6 +73,16 @@ function Children() {
 
   return (
     <>
+      <Box>
+        <Card>
+          <CardMedia
+            className="img-deti"
+            sx={{ height: 600 }}
+            image="https://www.viltiessala.lt/wp-content/uploads/2019/04/viltuke.jpg"
+            title="green iguana"
+          />
+        </Card>
+      </Box>
       <Box
         className="maincorus"
         sx={{
@@ -190,7 +191,7 @@ function Children() {
         }
       />
       <div>
-        <h1 className="h1">Нужна помощь</h1>
+        <h1 className="h1-one">Нужна помощь</h1>
       </div>
       <div className="div-card">
         <Card className="card" sx={{ minWidth: 275 }}>
@@ -297,6 +298,117 @@ function Children() {
             <Button size="small"></Button>
           </CardActions>
         </Card>
+      </div>
+
+      <div className="div-card">
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <CardContent>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            >
+              10 лет
+            </Typography>
+            <Typography variant="h5" component="div">
+              Владимир Николаев
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              <p className="nujno">Нужно 250 000 сом</p>
+            </Typography>
+            <Button>
+              <LocalHospitalIcon />
+              Вид помощи
+            </Button>
+            <Typography variant="body2">
+              Восстановительное лечение
+              <br />
+              <Button>
+                <VaccinesIcon />
+                Диагноз
+              </Button>
+              <br />
+              ДЦП, спастическая диплегия
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small"></Button>
+          </CardActions>
+        </Card>
+
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <CardContent>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            >
+              14 лет
+            </Typography>
+            <Typography variant="h5" component="div">
+              Нина Чередова
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              <p className="nujno">Нужно 131 290 сом</p>
+            </Typography>
+            <Button>
+              <LocalHospitalIcon />
+              Вид помощи
+            </Button>
+            <Typography variant="body2">
+              Восстановительное лечение
+              <br />
+              <Button>
+                <VaccinesIcon />
+                Диагноз
+              </Button>
+              <br />
+              Незавершенный остеогенез
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small"></Button>
+          </CardActions>
+        </Card>
+
+        <Card className="card" sx={{ minWidth: 275 }}>
+          <CardContent>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            >
+              18 лет
+            </Typography>
+            <Typography variant="h5" component="div">
+              Никита Шевченко
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              <p className="nujno">Нужно 131 290 с</p>
+            </Typography>
+            <Button>
+              <LocalHospitalIcon />
+              Вид помощи
+            </Button>
+            <Typography variant="body2">
+              Аферез
+              <br />
+              <Button>
+                <VaccinesIcon />
+                Диагноз
+              </Button>
+              <br />
+              Эмбриональная рабдомиосаркома среднего уха слева
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small"></Button>
+          </CardActions>
+        </Card>
+      </div>
+
+      <div>
+        <h1 className="h1-help">Вы уже помогли</h1>
       </div>
 
       <div className="div-card">

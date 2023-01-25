@@ -58,17 +58,16 @@ function Navbar() {
   return (
     <AppBar
       id="mbar"
-      sx={{ padding: "20px 36px", width: "100%" }}
+      sx={{ padding: "20px 36px", width: "100%", color: "black" }}
       position="static"
     >
       <Container maxWidth="100%">
         <Toolbar id="tbar" disableGutters>
-          <Button onClick={() => navigate("/")}>
-            <img
-              src="https://www.life-line.ru/local/templates/general/redesign_v2/img/new-design/logo-ll.svg"
-              alt=""
-            />
-          </Button>
+          <img
+            style={{ color: "blue" }}
+            src="https://www.life-line.ru/local/templates/general/donate_redesign/img/new-design/logo-ll2.svg"
+            alt=""
+          />
           <Box>
             <Box id="bbar">
               <Typography
