@@ -68,6 +68,29 @@ const ProductContextProvider = ({ children }) => {
       console.log(error.response.data);
     }
   }
+  const addChildren = async (newProduct) => {
+    const token = localStorage.getItem("token")
+      ? JSON.parse(localStorage.getItem("token"))
+      : "";
+
+    const config = {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        Authorization: `Bearer ${token.access}`,
+      },
+    };
+    try {
+      const res = await axios.post(
+        `http://34.170.17.83/children/`,
+        newProduct,
+        config
+      );
+      getProducts();
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   // ! READ (отображение продуктов)
   async function getProducts() {
@@ -154,6 +177,7 @@ const ProductContextProvider = ({ children }) => {
     deleteProduct,
     toggleLike,
     getOneProduct,
+    addChildren,
     oneProduct: state.oneProduct,
   };
 

@@ -1,10 +1,13 @@
-import React, {useAuth} from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import { useAuth } from "../../context/AuthContext";
+import { useEffect } from "react";
+import React from "react"
+import { Link } from "react-router-dom";
   
 
 
@@ -14,7 +17,11 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
-    
+    const {checkAuth, user} = useAuth()
+    useEffect(()=>{
+        checkAuth()
+    },[])
+    console.log(user);
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
@@ -30,6 +37,8 @@ function Navbar() {
         setAnchorElUser(null);
     };
     // console.log({user});
+
+ const ADMIN = "magometovmustafa@gmail.com";
     return (
         
         <AppBar
@@ -61,9 +70,26 @@ function Navbar() {
                   color: "inherit",
                   textDecoration: "none",
                 }}
+              >    
+                  </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/medicine"
+                sx={{
+                  mr: 2,
+                  display: { xs: "none", md: "flex" },
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".1rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
               >
                 Фонд
               </Typography>
+
               <Typography
                 variant="h6"
                 noWrap
@@ -85,7 +111,8 @@ function Navbar() {
                 variant="h6"
                 noWrap
                 component="a"
-                href="/children"
+
+
                 sx={{
                   mr: 2,
                   display: { xs: "none", md: "flex" },
@@ -115,7 +142,22 @@ function Navbar() {
               >
                 Контакты
               </Typography>
+            
+            <Link
+              
+              to="/admin"
+            >
+           <Typography  style={{
+                color: "red",
+                margin: "0 10px",
+                textDecoration: "underline",
+              }}>   Admin</Typography>
+            </Link>
+          
             </Box>
+            <div style={{marginLeft: '220px'}}>
+                {user ? <div>{user}</div>: null}
+            </div>
             <Box id="nbtns">
               <Button id="nbbtn" sx={{ color: "#007aff" }}>
                 Хочу помочь
