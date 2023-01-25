@@ -17,7 +17,7 @@ import {
 } from "@mui/material";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import VaccinesIcon from "@mui/icons-material/Vaccines";
-import StarBorderIcon from "@mui/icons-material/StarBorder";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -51,21 +51,6 @@ const images = [
     imgPath:
       "https://n1s1.hsmedia.ru/84/36/54/843654311e79d7f7941355f7a886fe2d/728x485_1_04072f738dc35f11bb22a7878e48debe@2121x1414_0xac120003_3235339081632917713.jpeg",
     // description: "Протонная терапия",
-  },
-  {
-    label: "Варвара Мигунова",
-    imgPath:
-      "https://thumbs.dreamstime.com/b/%D0%B4%D0%B5%D1%82%D0%B8-%D0%B1%D0%BE-%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BC%D0%B5-%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B5-56598241.jpg",
-  },
-  {
-    label: "Дарья Обухова",
-    imgPath:
-      "https://south-ossetia.info/wp-content/uploads/2019/11/%D0%94%D0%A6%D0%9F-760x490.jpg",
-  },
-  {
-    label: "Максим Маленький",
-    imgPath:
-      "https://img.freepik.com/premium-photo/patient-children-sleeping-on-patient-bed_38810-7741.jpg",
   },
 ];
 
@@ -102,7 +87,7 @@ function Children() {
         className="maincorus"
         sx={{
           maxWidth: "100%",
-          // flexGrow: 1,
+          flexGrow: 1,
           borderRadius: "20px",
           backgroundColor: "white",
         }}
@@ -171,7 +156,6 @@ function Children() {
           ))}
         </AutoPlaySwipeableViews>
       </Box>
-
       <MobileStepper
         id="crs"
         steps={maxSteps}
@@ -237,7 +221,7 @@ function Children() {
                 Диагноз
               </Button>
               <br />
-              Незавершенный остеогенез
+              Несовершенный остеогенез
             </Typography>
           </CardContent>
           <CardActions>
@@ -272,7 +256,7 @@ function Children() {
                 Диагноз
               </Button>
               <br />
-              Незавершенный остеогенез
+              Несовершенный остеогенез
             </Typography>
           </CardContent>
           <CardActions>
@@ -293,7 +277,7 @@ function Children() {
               Оксана Каррехт
             </Typography>
             <Typography sx={{ mb: 1.5 }} color="text.secondary">
-              <p className="nujno">Нужно 1 000 000 с</p>
+              <p className="nujno">Нужно 1 000 000 сом</p>
             </Typography>
             <Button>
               <LocalHospitalIcon />
@@ -431,12 +415,12 @@ function Children() {
         <Card className="card" sx={{ minWidth: 275 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="https://sodeistvie-detyam.ru/local/templates/fond/uploads/3cOdnqCP.jpg"
+            image="https://img.freepik.com/premium-photo/long-shot-nurse-helping-old-man-getting-up_23-2148239021.jpg?w=2000"
             title="green iguana"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Новая жизнь
+              Дом престарелых
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
@@ -444,9 +428,7 @@ function Children() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <StarBorderIcon />
-            </Button>
+            <Button size="small">Share</Button>
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
@@ -454,12 +436,12 @@ function Children() {
         <Card className="card" sx={{ minWidth: 275 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="https://sodeistvie-detyam.ru/local/templates/.default/uploads/17WS63mA.jpg"
+            image="https://1prof.by/storage/2022/12/bez-1212.jpg"
             title="green iguana"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Новые победы!
+              бездомные
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
@@ -467,9 +449,7 @@ function Children() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">
-              <StarBorderIcon />
-            </Button>
+            <Button size="small">Share</Button>
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
@@ -477,12 +457,12 @@ function Children() {
         <Card className="card" sx={{ minWidth: 275 }}>
           <CardMedia
             sx={{ height: 140 }}
-            image="https://movementup.ru/wp-content/uploads/child-with-cerebral-palsy-physiotherapy-children-therapy-center_56854-3581.jpg"
+            image="https://cabar.asia/wp-content/uploads/2022/07/d792fbb6c2b6feb2455aa3611d17851c.jpg"
             title="green iguana"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Смотрим в будущее с надеждой!
+              бездомные животные
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
@@ -491,73 +471,35 @@ function Children() {
           </CardContent>
           <CardActions>
             <Button size="small">
-              <StarBorderIcon />
+              <a
+                className="animals"
+                href="https://www.instagram.com/kainar.bishkek/"
+              >
+                <InstagramIcon />
+              </a>
             </Button>
             <Button size="small">Learn More</Button>
           </CardActions>
         </Card>
       </div>
-      <div className="div-card">
-        <Card className="card" sx={{ minWidth: 275 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://chance.su/uploads/posts/2021-10/1633394983_boldetam-min.jpg"
-            title="green iguana"
-          />
+      <div className="long-div">
+        <Card className="vse-deti_card" sx={{ minWidth: 275 }}>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Еще одна победа над раком
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            ></Typography>
+            <Typography className="vse-deti" variant="h5" component="div">
+              Все дети, кому нужна помощь
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            <Typography sx={{ mb: 1.5 }} color="text.secondary"></Typography>
+            <Typography variant="body2">
+              <br />
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
-
-        <Card className="card" sx={{ minWidth: 275 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://chance.su/uploads/posts/2020-04/1586042458_i-min.jpeg"
-            title="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Со счастливой улыбкой на лице
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
-
-        <Card className="card" sx={{ minWidth: 275 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="https://otkazniki.ru/upload/medialibrary/1cd/1cd1bf6630bb0a599050c2f4ea6a60ea.jpg"
-            title="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Доброе утро для Лизы
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small"></Button>
           </CardActions>
         </Card>
       </div>
