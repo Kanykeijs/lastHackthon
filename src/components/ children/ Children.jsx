@@ -69,15 +69,6 @@ const images = [
   },
 ];
 
-// const bull = (
-//   <Box
-//     component="span"
-//     sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-//   >
-//     •
-//   </Box>
-// );
-
 function Children() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
