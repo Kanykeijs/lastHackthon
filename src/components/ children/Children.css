@@ -70,10 +70,6 @@
   padding: 0;
   border: none;
 }
-
-#crsl {
-  margin-top: 200px;
-}
 @media all and (max-width: 1024px) {
   .maincorus {
     width: 1024px;

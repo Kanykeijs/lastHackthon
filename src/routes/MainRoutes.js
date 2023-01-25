@@ -9,10 +9,10 @@ import HomePage from "../pages/HomaPage/HomePage";
 import MedicinePage from "../pages/medicine/MedicinePage";
 import CreditCard from "react-credit-cards";
 import Homeless from "../components/homeless/Homeless";
-import Pets from "../components/pets/Pets";
 import Donate from "../components/donate/Donate";
 import Partners from "../components/partners/Partners";
 import Volunteers from "../components/volunteers/Volunteers";
+import { Pets } from "@mui/icons-material";
 // import Petss from "../components/pets/Petss";
 
 const MainRoutes = () => {
