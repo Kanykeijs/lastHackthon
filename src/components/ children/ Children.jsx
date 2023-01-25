@@ -98,8 +98,9 @@ function Children() {
   return (
     <>
       <Box>
-        <Card sx={{ maxWidth: 1500 }}>
+        <Card>
           <CardMedia
+            className="img-deti"
             sx={{ height: 600 }}
             image="https://www.viltiessala.lt/wp-content/uploads/2019/04/viltuke.jpg"
             title="green iguana"
@@ -215,7 +216,7 @@ function Children() {
         }
       />
       <div>
-        <h1 className="h1">Нужна помощь</h1>
+        <h1 className="h1-one">Нужна помощь</h1>
       </div>
       <div className="div-card">
         <Card className="card" sx={{ minWidth: 275 }}>
@@ -432,7 +433,7 @@ function Children() {
       </div>
 
       <div>
-        <h1 className="h1">Вы уже помогли</h1>
+        <h1 className="h1-help">Вы уже помогли</h1>
       </div>
 
       <div className="div-card">
