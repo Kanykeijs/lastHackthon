@@ -580,3 +580,32 @@ a:hover {
   padding-bottom: 150px;
   /* margin-bottom: 200px; */
 }
+
+#hmcrd {
+  width: 100%;
+  height: 630px;
+  padding-top: 20px;
+}
+
+#cardbr2 {
+  height: 495px;
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#cardbr2:hover {
+  background-color: rgb(51, 209, 253);
+  color: white;
+  transition: 0.3s;
+}
+
+#mainid3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 50px;
+  margin-left: 50px;
+  background-color: white;
+}
